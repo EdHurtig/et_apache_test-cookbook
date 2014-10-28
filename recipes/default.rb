@@ -6,13 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package 'git'
 
-group node['myface']['group']
+log "Well, that was too easy"
 
-user node['myface']['user'] do
-	  group node['myface']['group']
-	    system true
-	      shell '/bin/bash'
-end
-
-include_recipe 'apache2'
